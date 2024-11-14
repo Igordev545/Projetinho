@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", Arial;
+}
+
+:root {
+  --cor-primaria: rgb(230, 230, 250);
+  --texto-escuro: #0f172e;
+  --texto-claro: #475569;
+  --extra-claro: #f2f2f2;
+  --azul-botao: #474fa0;
+  --azul-escuro-botao: #3c4286;
+  --branco: #ffff;
+  --preto: #000;
+  --gradiente: linear-gradient(to top, rgb(211, 211, 211), rgb(128, 128, 128));
+
+}
+
+body {
+  background: var(--gradiente);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: var(--texto-escuro);
+  gap: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: var(--extra-claro);
+  min-height: 300px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #000;
+}
+
+
+.inicio h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--texto-claro);
+}
+
+.sobrenos {
+  font-size: 21px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+h3{
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 55px;
+  color: var(--preto);
+}
+
+section {
+  width: 100%;
+  margin: auto;
+}
+
+.sejabemvindo {
+  font-size: 30px;
+  color: var(--texto-escuro);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* aki cmc os cards  */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 30px auto;
+  text-align: center;
+  gap: 10px;
+}
+
+.cards h5 {
+  font-size: 19px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #bdb76b;
+}
+
+.cards p {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--branco);
+}
+
+.cards img {
+  width: 150px;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2%;
+}
+
+.card {
+  flex-direction: row;
+  padding: 10px;
+  background-color: var(--texto-claro);
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  flex-grow: 1;
+  margin: 25px;
+}
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
+.img-log {
+  border-radius: 5%;
+}
+
+.cards a:hover {
+  background-color: var(--azul-escuro-botao);
+  transition: 0.4 ease;
+}
+
+/* entre em contato */
+
+.container-contatos {
+  max-width: 100%;
+  background-color: var(--branco);
+  padding: 40px;
+  margin: 100px 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--texto-escuro);
+  border-radius: 25px;
+}
+
+.contato h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--texto-escuro);
+  margin-bottom: 30px;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.3s;
+  margin-bottom: 20px;
+}
+
+.form-control:focus {
+  border-color: var(--azul-escuro-botao);
+  box-shadow: 0 0 5px var(--azul-escuro-botao);
+}
+
+textarea {
+  resize: none;
+}
